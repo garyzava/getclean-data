@@ -28,7 +28,7 @@ Raw data used for this script:
 * Output
   * Filename: uci_tidy_dataset.txt tidy data.
 
-##Main Tranformation Variables In Script
+##Main Tranformation Variables In run_analysis.R Script
 * subject <- Merged data for subject_train and subject_test.
 * activity <- Merged data for activity_train and activity_test.
 * features <- Merged data for feature_train and features_test.
@@ -38,6 +38,7 @@ Raw data used for this script:
 * final_data <- Data Frame with only required columns.
 * tidy_data <- Final tidy data.
 
-##How To Execute Script
+##How To Execute run_analysis.R Script
+* Copy run_analysis.R script into your working set directory.
 * In R command line type: source("run_analysis.R")
 * Script will install all necessary libraries. All files should be in workset directory previously in a folder named UCI HAR Dataset.
