@@ -24,10 +24,10 @@ More on http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+
 ##How The Script Works
 * It first verify or install all necessary libraries
 * Load with read.table command all raw datasets
-* For the first step -Merge the training and the test sets to create one data set-, it appends subject, activity and feature train and test datasets using rbind command. Then rename all features column name using features.txt data set. Finally create a new date frame adding activity and subject as a column to features
+* For the first step -Merge the training and the test sets to create one data set-, it appends subject, activity and feature train and test datasets using rbind command. Then rename all features column name using features data set. Finally create a new date frame adding activity and subject as a column to features
 * In second step -Extract only the measurements on the mean and standard deviation for each measurement-, using grep extract relevant column, that is mean and standard dev columns.
-* Third step -Use descriptive activity names to name the activities in the data set-, it renames headers using gsub and names command
-* Final step, aggregates data to get the mean of each metric using aggreage command and getting the output in a file named uci_tidy_dataset.txt, that separated with pipes "|".
+* Third step -Use descriptive activity names to name the activities in the data set-, it renames headers using gsub and names command.
+* Final step, aggregates data to get the mean of each metric using the aggregate command to get the output in a file named uci_tidy_dataset.txt, that is separated with pipes "|".
 
 ##Dependencies
 * R Library: data.table
